@@ -69,7 +69,7 @@ function App() {
 
   return (
     <Fragment>
-      <h2>Github Explorer</h2>
+      <h2>Github repositories explorer</h2>
       <StyledTopContainer>
         <Input
           placeholder='Enter username'
