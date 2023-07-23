@@ -9,7 +9,7 @@ const githubApi = axios.create({
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
-    Authorization: `token ${TOKEN}`
+    Authorization: TOKEN
   }
 });
 
@@ -18,7 +18,7 @@ export const fetcher = async (url: string) => {
     const response = await githubApi.get(url);
     return response.data;
   } catch (error) {
-    console.log(error);
+    console.log('error=====>', error);
   }
 };
 
